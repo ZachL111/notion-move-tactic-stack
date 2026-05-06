@@ -1,0 +1,73 @@
+{
+  "repo": "notion-move-tactic-stack",
+  "language": "Elixir",
+  "category": "Chess and game engines",
+  "goal": "Build an Elixir toolkit that studies tactic behavior through windowed input fixtures, with late-data behavior checks and explicit failure cases.",
+  "review_model": {
+    "terms": [
+      "position pressure",
+      "move ordering",
+      "search width",
+      "endgame risk"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "position pressure",
+      "signal": 78,
+      "slack": 49,
+      "drag": 30,
+      "confidence": 91,
+      "score": 206,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "move ordering",
+      "signal": 78,
+      "slack": 28,
+      "drag": 26,
+      "confidence": 81,
+      "score": 187,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "search width",
+      "signal": 86,
+      "slack": 53,
+      "drag": 29,
+      "confidence": 91,
+      "score": 229,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "endgame risk",
+      "signal": 69,
+      "slack": 46,
+      "drag": 14,
+      "confidence": 94,
+      "score": 236,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "position pressure",
+      "signal": 59,
+      "slack": 21,
+      "drag": 23,
+      "confidence": 57,
+      "score": 127,
+      "lane": "watch"
+    }
+  ]
+}

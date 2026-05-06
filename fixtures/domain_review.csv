@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,position pressure,78,49,30,91,206,ship
+stress,move ordering,78,28,26,81,187,ship
+edge,search width,86,53,29,91,229,ship
+recovery,endgame risk,69,46,14,94,236,ship
+stale,position pressure,59,21,23,57,127,watch
