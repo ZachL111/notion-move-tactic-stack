@@ -1,0 +1,17 @@
+{
+  "repo": "notion-move-tactic-stack",
+  "thresholds": {
+    "signal": 3,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 207,
+    "watch": 107
+  },
+  "terms": [
+    "position pressure",
+    "move ordering",
+    "search width",
+    "endgame risk"
+  ]
+}
